@@ -159,35 +159,36 @@
       <h2>Request Free Estimate</h2>
       <p class="form-note-top">No obligation. We'll respond within 2 business hours.</p>
 
+      <form action="https://formspree.io/f/xlgqrkbb" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label>First Name</label>
-          <input type="text" placeholder="John">
+          <input type="text" name="first_name" placeholder="John" required>
         </div>
         <div class="form-group">
           <label>Last Name</label>
-          <input type="text" placeholder="Smith">
+          <input type="text" name="last_name" placeholder="Smith" required>
         </div>
       </div>
 
       <div class="form-group">
         <label>Phone Number</label>
-        <input type="tel" placeholder="(318) 000-0000">
+        <input type="tel" name="phone" placeholder="(318) 000-0000" required>
       </div>
 
       <div class="form-group">
         <label>Email Address</label>
-        <input type="email" placeholder="you@email.com">
+        <input type="email" name="email" placeholder="you@email.com">
       </div>
 
       <div class="form-group">
         <label>Property Address in Shreveport</label>
-        <input type="text" placeholder="Street address, city, zip">
+        <input type="text" name="address" placeholder="Street address, city, zip">
       </div>
 
       <div class="form-group">
         <label>Type of Foundation</label>
-        <select>
+        <select name="foundation_type">
           <option value="">I'm not sure</option>
           <option>Pier and beam (elevated, older home)</option>
           <option>Concrete slab</option>
@@ -197,7 +198,7 @@
 
       <div class="form-group">
         <label>What Are You Experiencing?</label>
-        <select>
+        <select name="problem">
           <option value="">Select main symptom...</option>
           <option>Cracks in walls or ceilings</option>
           <option>Sticking doors or windows</option>
@@ -214,11 +215,12 @@
 
       <div class="form-group">
         <label>Additional Details (Optional)</label>
-        <textarea placeholder="When did you first notice the problem? Any other symptoms? Year your home was built?"></textarea>
+        <textarea name="details" placeholder="When did you first notice the problem? Any other symptoms? Year your home was built?"></textarea>
       </div>
 
-      <button class="form-submit">Submit Free Estimate Request →</button>
+      <button type="submit" class="form-submit">Submit Free Estimate Request →</button>
       <p class="form-disclaimer">By submitting, you agree to be contacted by Shreveport Foundation Pros. We never share your information with third parties.</p>
+      </form>
     </div>
   </div>
 
