@@ -894,21 +894,22 @@
         <div class="quote-form">
           <h3>Get Your Free Estimate</h3>
           <p>We respond within 2 hours during business hours.</p>
+          <form action="https://formspree.io/f/xlgqrkbb" method="POST">
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="John Smith">
+            <input type="text" name="name" placeholder="John Smith" required>
           </div>
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="tel" placeholder="(318) 000-0000">
+            <input type="tel" name="phone" placeholder="(318) 000-0000" required>
           </div>
           <div class="form-group">
             <label>Address in Shreveport</label>
-            <input type="text" placeholder="Street address">
+            <input type="text" name="address" placeholder="Street address">
           </div>
           <div class="form-group">
             <label>What Are You Seeing?</label>
-            <select>
+            <select name="problem">
               <option value="">Select a problem...</option>
               <option>Cracks in walls or floors</option>
               <option>Doors/windows sticking</option>
@@ -920,8 +921,9 @@
               <option>Not sure — need inspection</option>
             </select>
           </div>
-          <button class="form-submit">Request Free Estimate →</button>
+          <button type="submit" class="form-submit">Request Free Estimate →</button>
           <p class="form-note">No obligation. We'll call within 2 hours.</p>
+          </form>
         </div>
       </div>
     </div>
